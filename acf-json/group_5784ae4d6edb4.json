@@ -1,0 +1,2568 @@
+{
+    "key": "group_5784ae4d6edb4",
+    "title": "Create Bubble",
+    "fields": [
+        {
+            "key": "field_52ea3d1db89f9",
+            "label": "Bubble Latitude",
+            "name": "latitude",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_52ea3d3eb89fa",
+            "label": "Bubble Longitude",
+            "name": "longitude",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_53a89221039d5",
+            "label": "Bubble Type",
+            "name": "bubble_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "tribe": "tribe",
+                "game": "game",
+                "profile": "profile",
+                "questionnaire": "questionnaire",
+                "forum": "forum",
+                "chat": "chat",
+                "advert": "advert",
+                "alert": "alert",
+                "classified": "classified",
+                "event": "event",
+                "news": "news",
+                "media": "media",
+                "url": "web",
+                "question": "question",
+                "grafitti": "grafitti\/statement",
+                "information": "info"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "media",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_56c044d24ce2c",
+            "label": "Classified Type",
+            "name": "classified_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "itemforsale": "Sell",
+                "rent": "Rent \/ Loan"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "itemforsale",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5527f77513408",
+            "label": "Bubble Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "Want to sell something or rent it out? Have something that the neighbours can borrow? Or just want to market your service to other locals... select the type of classified above and add the details below.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Classified Title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5632547213e46",
+            "label": "Content",
+            "name": "content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "visual",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_577f9d6ce0582",
+            "label": "Image",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    },
+                    {
+                        "field": "field_56c044d24ce2c",
+                        "operator": "!=",
+                        "value": "itemforsale"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg"
+        },
+        {
+            "key": "field_5527f7a413409",
+            "label": "Cost (£)",
+            "name": "cost",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    },
+                    {
+                        "field": "field_56c044d24ce2c",
+                        "operator": "==",
+                        "value": "itemforsale"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5698fdb5fa3c5",
+            "label": "Cost (£ per time unit)",
+            "name": "cost",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    },
+                    {
+                        "field": "field_56c044d24ce2c",
+                        "operator": "==",
+                        "value": "rent"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5698fde3fa3c6",
+            "label": "Time Unit",
+            "name": "item_time_unit",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "classified"
+                    },
+                    {
+                        "field": "field_56c044d24ce2c",
+                        "operator": "==",
+                        "value": "rent"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Minute": "Minute",
+                "Hour": "Hour",
+                "Day": "Day",
+                "Week": "Week",
+                "Month": "Month",
+                "Year": "Year"
+            },
+            "default_value": [
+                "Hour"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_56def9e296971",
+            "label": "Event Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_56e17c5b9eeb2",
+            "label": "Url",
+            "name": "url",
+            "type": "url",
+            "instructions": "Event Url (if available)",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_56def99b96970",
+            "label": "Event Location",
+            "name": "event_location",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Event Address",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_577f9dc2e0584",
+            "label": "Image",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg"
+        },
+        {
+            "key": "field_56defa0996972",
+            "label": "Content",
+            "name": "content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Event Description",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_56d03dc18b168",
+            "label": "Event Start Date",
+            "name": "event_date_start",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "d\/m\/Y g:i a",
+            "first_day": 1
+        },
+        {
+            "key": "field_56defa7b4ce67",
+            "label": "Event End Date",
+            "name": "event_date_end",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "event"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "d\/m\/Y g:i a",
+            "first_day": 1
+        },
+        {
+            "key": "field_553a68fe7ec86",
+            "label": "Grafitti Type",
+            "name": "grafitti_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "grafitti"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text": "Text Grafitti",
+                "voice": "Voice Grafitti"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "text",
+            "layout": "vertical",
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_53a89be6a6ebc",
+            "label": "Enter a message, text, statement or even a joke below",
+            "name": "bubble_title",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "grafitti"
+                    },
+                    {
+                        "field": "field_553a68fe7ec86",
+                        "operator": "==",
+                        "value": "text"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_56ce05092f0cc",
+            "label": "Voice Message Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "grafitti"
+                    },
+                    {
+                        "field": "field_553a68fe7ec86",
+                        "operator": "==",
+                        "value": "voice"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_553a69ef7ec88",
+            "label": "Upload a voice message for others to hear",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "grafitti"
+                    },
+                    {
+                        "field": "field_553a68fe7ec86",
+                        "operator": "==",
+                        "value": "voice"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".mp3, .wav, .ogg, .wma, .aac, .m4a"
+        },
+        {
+            "key": "field_594d0e4153569",
+            "label": "Upload Media or Add Media URL",
+            "name": "media_location",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "media"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "uploaded": "Upload",
+                "url": "URL"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "Upload",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_53bd9f1de721e",
+            "label": "Media Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "media"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_594d0e9a5356b",
+            "label": "Media File URL",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "media"
+                    },
+                    {
+                        "field": "field_594d0e4153569",
+                        "operator": "==",
+                        "value": "url"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_577f662a56d51",
+            "label": "Image",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "media"
+                    },
+                    {
+                        "field": "field_594d0e4153569",
+                        "operator": "==",
+                        "value": "uploaded"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg, .aif, .mov, .avi, .mpeg, .qt, .mpg, .mp4, .mp3, .wav, .ogg, .wma, .aac, .m4a"
+        },
+        {
+            "key": "field_53bd9f6ae721f",
+            "label": "Information about something",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "Fill in the fields below to create Information that can be accessed by the Community.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Information Title",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_577fa29be0585",
+            "label": "Image",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg"
+        },
+        {
+            "key": "field_53a89ce2a0792",
+            "label": "Content",
+            "name": "content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_594ce602e0f1b",
+            "label": "News Type",
+            "name": "news_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "news"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "card": "Card",
+                "url": "URL"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_56ded5765d274",
+            "label": "News Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "news"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_577fa2d3e0586",
+            "label": "News Image",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "news"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg, .aif, .mov, .avi, .mpeg, .qt, .mpg, .mp4"
+        },
+        {
+            "key": "field_56ded5c25d276",
+            "label": "News Content",
+            "name": "content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "news"
+                    },
+                    {
+                        "field": "field_594ce602e0f1b",
+                        "operator": "==",
+                        "value": "card"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_594cebe6b2a0b",
+            "label": "News URL",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "news"
+                    },
+                    {
+                        "field": "field_594ce602e0f1b",
+                        "operator": "==",
+                        "value": "url"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "News Click-Through Url"
+        },
+        {
+            "key": "field_54099c52b2233",
+            "label": "Chatroom Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "Create a realtime chatroom that only those nearby can access...",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "chat"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56b8fab96a315",
+            "label": "Advert Type",
+            "name": "advert_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "advert"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "text": "Text",
+                "image": "Image"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "image",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_56b8ea4960b31",
+            "label": "Advert - Text",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "Enter the text to be displayed as the advert",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "advert"
+                    },
+                    {
+                        "field": "field_56b8fab96a315",
+                        "operator": "==",
+                        "value": "text"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_577fa311e0587",
+            "label": "Advert - Image",
+            "name": "image",
+            "type": "file",
+            "instructions": "Upload your Advert below to display it to the Community",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "advert"
+                    },
+                    {
+                        "field": "field_56b8fab96a315",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg"
+        },
+        {
+            "key": "field_5527e823070b6",
+            "label": "Url",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "advert"
+                    },
+                    {
+                        "field": "field_56b8fab96a315",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Advert Click-Through Url"
+        },
+        {
+            "key": "field_56ec38f72c33f",
+            "label": "Url",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "advert"
+                    },
+                    {
+                        "field": "field_56b8fab96a315",
+                        "operator": "==",
+                        "value": "text"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Teaser Click-Through Url"
+        },
+        {
+            "key": "field_553a66d478132",
+            "label": "Social Media Post or Web URL",
+            "name": "url_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "url"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "oembed": "Social Network \/ Oembed",
+                "url": "Web Page \/ Site"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_594ce4a4b1c60",
+            "label": "Alert Click Through",
+            "name": "alert_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "alert"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "card": "Card",
+                "url": "URL"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "card",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_56ba09d4e49fa",
+            "label": "Alert Message",
+            "name": "bubble_title",
+            "type": "textarea",
+            "instructions": "Notify the Community in real-time by entering an alert below.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "alert"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Write your message here to alert those nearby",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_594ce3cfb1c5f",
+            "label": "Alert URL",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "alert"
+                    },
+                    {
+                        "field": "field_594ce4a4b1c60",
+                        "operator": "==",
+                        "value": "url"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_56ba1119996a2",
+            "label": "Ask the Community a Question",
+            "name": "bubble_title",
+            "type": "textarea",
+            "instructions": "Enter your question below and the community will answer it.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "question"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54c575687511c",
+            "label": "Website \/ Webpage Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "url"
+                    },
+                    {
+                        "field": "field_553a66d478132",
+                        "operator": "==",
+                        "value": "url"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5461c0e5a37a3",
+            "label": "Url",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "url"
+                    },
+                    {
+                        "field": "field_553a66d478132",
+                        "operator": "==",
+                        "value": "url"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Please include the http:\/\/ prefix in order for links to work"
+        },
+        {
+            "key": "field_555e0a3ae4e56",
+            "label": "Post Social Media (Facebook, Twitter, Instagram etc)",
+            "name": "url",
+            "type": "oembed",
+            "instructions": "You can share your social media posts (old or current) simply by pasting the posts url here.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "url"
+                    },
+                    {
+                        "field": "field_553a66d478132",
+                        "operator": "==",
+                        "value": "oembed"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
+            "key": "field_5527f7d3c8471",
+            "label": "Game Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "game"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5527f0301fb37",
+            "label": "Game Url",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "game"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5527f08ba3ca6",
+            "label": "Add Form, Questionnaire, Poll or Survey",
+            "name": "content",
+            "type": "gravity_forms_field",
+            "instructions": "You can add your pre-created forms, questionnaires, polls and surveys here. Forms can be created and results viewed or exported via the desktop client.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "questionnaire"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "allow_multiple": 0
+        },
+        {
+            "key": "field_581881dde4657",
+            "label": "Form Type",
+            "name": "form_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "questionnaire"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "card": "Card",
+                "url": "URL"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5527f0d3a3ca7",
+            "label": "Profile Title",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "Market your choosen profile to those nearby...",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "profile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5c80387c38aef",
+            "label": "Profile Photo Source",
+            "name": "profile_photo_source",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "profile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "user": "User Profile",
+                "custom": "Custom"
+            },
+            "default_value": [
+                "custom"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5c80396d4d7f3",
+            "label": "Profile Photo",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c80387c38aef",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg"
+        },
+        {
+            "key": "field_5527f18b1f418",
+            "label": "Profile Agenda",
+            "name": "profile_agenda",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "profile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Meet Similar People": "Meet Similar People",
+                "Find Love": "Find Love",
+                "Fitness": "Fitness",
+                "Childcare": "Childcare",
+                "Work": "Work Networking",
+                "Other": "Other"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56b4dd31371b6",
+            "label": "Profile Summary",
+            "name": "content",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "profile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "br",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5527f254f31a6",
+            "label": "Attach the following social profiles.",
+            "name": "profile_data_sources",
+            "type": "checkbox",
+            "instructions": "The details (urls) for these social network profiles can be added via 'My Profile' in the main app menu. If they are not set they will not appear. The first one is for showing the profile that you signed up with (if available).",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "profile"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "SignUpNetworkProfile": "SignUpNetworkProfile",
+                "linkedin": "LinkedIn",
+                "facebook": "Facebook",
+                "instagram": "Instagram",
+                "twitter": "Twitter",
+                "google": "Google"
+            },
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "allow_custom": 0,
+            "save_custom": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_56b8a1448d01d",
+            "label": "Select a Topic",
+            "name": "forum_id",
+            "type": "page_link",
+            "instructions": "Forums and topics can only be created by Premium, Corporate or Administrative users. The idea is to engage users by offering discussions about things that matter...",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "forum"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "topic"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "allow_archives": 1
+        },
+        {
+            "key": "field_52fb945246615",
+            "label": "Activate Radius Slider",
+            "name": "radius",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "meters",
+            "default_value": 300,
+            "slider_min_value": 0,
+            "slider_max_value": 3000,
+            "increment_value": 30
+        },
+        {
+            "key": "field_5d1c5d2a8196e",
+            "label": "Tribe Name",
+            "name": "bubble_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c5d5e8196f",
+            "label": "Tribe Description",
+            "name": "content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "This is a description about a tribe.",
+            "tabs": "text",
+            "media_upload": 1,
+            "toolbar": "full",
+            "delay": 0
+        },
+        {
+            "key": "field_5d1c5dc981970",
+            "label": "Tribe Logo",
+            "name": "image",
+            "type": "file",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ".tiff, .jpeg, .gif, .png, .bmp, .svg, .jpg"
+        },
+        {
+            "key": "field_5d1c683693ee1",
+            "label": "Tribe Website URL",
+            "name": "url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d1c5e3774e85",
+            "label": "Tribe Size",
+            "name": "tribe_size",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 100000000000000,
+            "step": 1
+        },
+        {
+            "key": "field_5d1c5eaa9e399",
+            "label": "Tribe Activity",
+            "name": "tribe_activity",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "100 :: Very Active": "100 :: Very Active",
+                "80 :: Active": "80 :: Active",
+                "60 :: Fairly Active": "60 :: Fairly Active",
+                "40 :: Not Much Activity": "40 :: Not Much Activity",
+                "20 :: No Activity": "20 :: No Activity"
+            },
+            "default_value": [
+                60
+            ],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d1c5f799e39a",
+            "label": "Tribe Created",
+            "name": "tribe_created",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y g:i a",
+            "return_format": "d\/m\/Y g:i a",
+            "first_day": 1
+        },
+        {
+            "key": "field_5d1c60059e39b",
+            "label": "Tribe Type",
+            "name": "tribe_type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Public": "Public",
+                "Private": "Private",
+                "Premium": "Premium",
+                "On Request": "On Request"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d1c60c29e39c",
+            "label": "Tribe Categories",
+            "name": "categories",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Category 1": "Category 1",
+                "Category 2": "Category 2",
+                "Category 3": "Category 3"
+            },
+            "default_value": [
+                "Category 1"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5d1c61129e39d",
+            "label": "Tribe Tags",
+            "name": "tags",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Tag1, Tag2, Tag3, Tag4",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c67bc3f6d3",
+            "label": "Tribe Slides",
+            "name": "tribe_slides",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "57fe0b3f5e22b": {
+                    "key": "57fe0b3f5e22b",
+                    "name": "",
+                    "label": "",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d1c67bc3f6d4",
+                            "label": "Slide Content",
+                            "name": "slide_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5d1c67bc3f6d5",
+                            "label": "Slide Background Type",
+                            "name": "slide_background_type",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "colour": "Colour",
+                                "image": "Image"
+                            },
+                            "default_value": [
+                                "colour"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5d1c67bc3f6d6",
+                            "label": "Slide Background Colour",
+                            "name": "slide_background_colour",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5d1c67bc3f6d5",
+                                        "operator": "==",
+                                        "value": "colour"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#BA68C8"
+                        },
+                        {
+                            "key": "field_5d1c67bc3f6d7",
+                            "label": "Slide Background Image",
+                            "name": "slide_background_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5d1c67bc3f6d5",
+                                        "operator": "==",
+                                        "value": "image"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Slide",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_5d1c687293ee2",
+            "label": "Tribe UID",
+            "name": "tribe_uid",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c689288fc3",
+            "label": "Tribe Stack Version",
+            "name": "tribe_stack_version",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "1.00",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5d1c78ad6b53c",
+            "label": "Tribe Longtitude",
+            "name": "tribe_longtitude",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5d1c78db6b53d",
+            "label": "Tribe Latitude",
+            "name": "tribe_latitude",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5d1c78ea6b53e",
+            "label": "Tribe Radius",
+            "name": "tribe_radius",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_5d1c78f46b53f",
+            "label": "Tribe Location",
+            "name": "tribe_location",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": "",
+            "height": ""
+        },
+        {
+            "key": "field_5d1c790a6b540",
+            "label": "Tribe Email",
+            "name": "tribe_email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c79176b541",
+            "label": "Tribe Telephone",
+            "name": "tribe_telephone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c792c6b542",
+            "label": "Tribe Instagram",
+            "name": "tribe_instagram",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c79376b543",
+            "label": "Tribe Facebook",
+            "name": "tribe_facebook",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c79436b544",
+            "label": "Tribe Twitter",
+            "name": "tribe_twitter",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d1c794b6b545",
+            "label": "Tribe LinkedIn",
+            "name": "tribe_linkedin",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_53a89221039d5",
+                        "operator": "==",
+                        "value": "tribe"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": -11,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "These are the fields used to create content (bubble types).  All fields requierd by the create bubble UI (beyond Standard WP) are managed here.",
+    "modified": 1563824126
+}

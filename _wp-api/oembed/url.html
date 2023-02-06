@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Oembed by URL</title>
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.oembed.js"></script>
+	<style type="text/css">
+		body,iframe {
+			margin: 0 !important;
+		}
+		.oembedall-container > * {
+			margin: 0 !important;
+		}
+		.oembedall-closehide,br,a{
+			display: none !important;
+		}
+	</style>
+	<script type="application/javascript">
+		$(document).ready(function() {
+			function getQueryVariable(variable) {
+				var query = window.location.search.substring(1);
+				var vars = query.split("&");
+				var pair = vars[0].split("@");
+				if (pair[0] == variable) {
+					tagdata = [];
+					eventdata = [];
+					var scriptruns = [];
+					var text = pair[1];
+					text = $('<span>' + text + '</span>').text(); //strip html
+					text = text.replace(/(\s|>|^)(https?:[^\s<]*)/igm, '$1<div><a href="$2" class="oembed">$2</a></div>');
+					text = text.replace(/(\s|>|^)(mailto:[^\s<]*)/igm, '$1<div><a href="$2" class="oembed">$2</a></div>');
+					$('#out').empty().html(text);
+					$(".oembed").oembed(null, {
+						apikeys: {},
+					});
+				}
+			}
+			getQueryVariable('url');
+		});
+	</script>
+	</head>
+	<body>
+		<!-- format is: url.html?url@[OEMBED URL HERE] -->
+		<div id="out"></div>
+	</body>
+</html>

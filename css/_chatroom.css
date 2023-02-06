@@ -1,0 +1,351 @@
+/* CSS Document */
+
+
+/* CHAT ----------------------------------------------------------------------------  */
+
+
+div.wpmudev-chat-box .wpmudev-chat-module:last-child {
+ 	margin-bottom: 0px !important;
+ }
+ #wpmudev-chat-box-post-5253 div.wpmudev-chat-module-messages-list {
+ 	background: #f1f1f1;
+ 	background-color: #f1f1f1;
+ }
+
+
+div.wpmudev-chat-box div.wpmudev-chat-module-messages-list {
+    background: inherit !important;
+}
+ .wpmudev-chat-box-private {
+ 	display: none!important
+ }
+ .wpmudev-chat-admin-actions-item-delete, .wpmudev-chat-module-header, .wpmudev-chat-send-meta {
+ 	display: none
+ }
+ .wpmudev-chat-box {
+ 	border: none!important;
+ 	background: 0 0!important;
+ 	/*  margin-top: 40px; */
+ 	height: inherit !important;
+ }
+ .wpmudev-chat-row {
+ 	background-color: #EFEFEF!important;
+ 	border-top: 1px solid #CCC!important;
+ 	border-left: 0!important;
+ 	border-right: 0!important;
+ 	margin-bottom: 0!important;
+ 	border-bottom: 0px solid rgba(204, 204, 204, 0.34)!important;
+ }
+ textarea.wpmudev-chat-send {
+ 	float: left!important;
+ 	border: 1px solid #CCC!important;
+ 	padding: 0!important;
+ 	color: #000!important;
+ 	width: 100%!important
+ }
+ .wpmudev-chat-module-messages-list {
+ 	height: 100% !important;
+ 	padding-bottom: 50px !important;
+ 	background-color: #EFEFEF !important;
+ }
+ .wpmudev-chat-admin-actions-item {
+ 	display: none !important;
+ }
+
+#wpmudev-chat-box-page-10621 div.wpmudev-chat-module-messages-list div.wpmudev-chat-row a.wpmudev-chat-user-avatar,
+#wpmudev-chat-box-page-10621 div.wpmudev-chat-module-messages-list div.wpmudev-chat-row a.wpmudev-chat-user-avatar img{width:25px !important; height:25px !important;}
+
+div.wpmudev-chat-box img {
+    margin-top: -4px !important;
+}
+
+div.wpmudev-chat-box p{font-size: 0.9em !important; }
+
+div.wpmudev-chat-box div.wpmudev-chat-module-messages-list div.wpmudev-chat-row-moderator a.wpmudev-chat-user-avatar{margin-bottom: 0px !important; background:none !important;}
+
+div.wpmudev-chat-box div.wpmudev-chat-module-message-area textarea.wpmudev-chat-send{font:inherit !important; }
+
+ .comment-form-comment label, .wpmudev-chat-send-button, .bbp-submit-wrapper button {
+ 	display: inline-block;
+    border: 0;
+    /* float: right; */
+    height: 50px;
+    /* border-radius: 50px; */
+    /* line-height: 44px; */
+    margin: 0;
+    right: 0;
+    line-height: 40px;
+    font-size: .8em;
+    padding: 6px;
+    width: 45px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transition: background .5s ease-out;
+    -moz-transition: background .5s ease-out;
+    -o-transition: background .5s ease-out;
+    -ms-transition: background .5s ease-out;
+    transition: background .5s ease-out;
+    top: 0px;
+ }
+ .comment-form-comment label, .wpmudev-chat-send-button {
+ 	position: absolute;
+ }
+ .wpmudev-chat-send-button {
+ 	top: 0px;
+    font-weight: bold;
+    font-size: .8rem;
+    right: 0px;
+    margin-right: 0px;
+    margin: 0;
+    letter-spacing: .7px;
+ }
+ div.wpmudev-chat-box div.wpmudev-chat-module-messages-list div.wpmudev-chat-row a.wpmudev-chat-user-avatar {
+ margin: 0;
+	  margin-left: 0 !important;
+ }
+ #respond.showme .submit {
+ 	-webkit-appearance: none;
+ 	display: block;
+ 	top: 0px;
+ 	margin: 0px;
+ 	/*margin-top: 1px;*/
+ 	right: 0px;
+ 	padding: 0;
+ 	height: 50px;
+ 	width: 50px;
+ 	position: absolute;
+ 	border-radius: 50px;
+ 	line-height: 50px;
+ 	font-size: 8px;
+ 	border: none;
+ 	font-weight: bold;
+ 	text-transform: uppercase;
+ 	text-align: center;
+ }
+ .reply {
+ 	text-align: right;
+ }
+ .comment-reply-login {
+ 	color: #ff6600;
+ }
+ .must-log-in {
+ 	margin-top: -50px;
+ 	font-size: 0px;
+ }
+ .must-log-in a {
+ 	font-size: 13px;
+ 	padding: 10px;
+ 	background-color: #ff6600;
+ 	display: block;
+ 	line-height: 50px;
+ 	width: 60%;
+ 	opacity: 0;
+ }
+ div.wpmudev-chat-box.wpmudev-chat-session-open div.wpmudev-chat-module-message-area {
+ 	position: fixed;
+ 	bottom: 0px;
+ 	max-height: 75px;
+	 z-index: 9;
+ 	/* height: 85px; */
+ 	margin-bottom: 0px !important;
+ 	border-radius: 0px;
+ }
+ .page-template-page-mashboard div.wpmudev-chat-box-page.wpmudev-chat-session-open div.wpmudev-chat-module-message-area {
+ 	bottom: 0px !important;
+ }
+ div.wpmudev-chat-box p {
+ 	padding-left: 5px !important;
+ 	padding-right: 5px !important;
+ }
+ .wpmudev-chat-module .wpmudev-chat-row-user img {
+ 	border-bottom-right-radius: 0px;
+ 	border-top-right-radius: 0px;
+ 	margin-right: 5px;
+ 	margin-right: 5px;
+ 	margin-left: -5px;
+ }
+ .wpmudev-chat-module .wpmudev-chat-row-moderator img {
+ 	border-bottom-left-radius: 0px;
+ 	border-top-left-radius: 0px;
+ 	margin-left: 0px;
+ }
+ .wpmudev-chat-message img {
+ 	border-radius: 40px !important;
+ }
+ /* creates triangle */
+ 
+ li.comment article {
+ 	padding: 5px;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+ .comments-title {
+ 	font-size: 12px
+ }
+ .wpmudev-chat-row-moderator .wpmudev-chat-message:after {
+ 	left: auto;
+ 	right: 15px;
+ }
+ div.wpmudev-chat-box p {
+ 	margin: 5px 5px;
+ }
+ .wpmudev-chat-row {
+ 	border-top: 0px !important;
+ }
+ div.wpmudev-chat-box p {
+ 	margin: 10px !important;
+ }
+ .comment-author img {
+ 	border: 0;
+    border-radius: 50px;
+    max-height: 30px;
+    max-width: 30px;
+ }
+
+div.wpmudev-chat-box div.wpmudev-chat-module-messages-list div.wpmudev-chat-row a.wpmudev-chat-user-avatar {
+    margin-bottom: -4px !important;
+}
+ .wpmudev-chat-message:after {
+ 	content: "";
+ 	display: block;
+ 	position: absolute;
+ 	bottom: -5px;
+ 	left: 15px;
+ 	width: 0;
+ 	border-width: 5px 5px 0;
+ 	border-style: solid;
+ 	border-color: #cccccc transparent;
+ 	display: none;
+ }
+ .wpmudev-chat-row-moderator .wpmudev-chat-message {
+ 	text-align: right;
+
+	/* background-color: #fff;*/
+ }
+
+
+div.wpmudev-chat-row-moderator a.wpmudev-chat-user-avatar {
+	    margin-right: -5px !important;
+    margin-left: 10px !important;
+}
+
+
+ .comment {
+ 	position: relative;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	min-height: 40px;
+ 	/* width: 100%; */
+ 	border-width: 0px;
+ 	border-style: solid;
+ 	border-color: #353535 transparent;
+ 	border-top: 0px;
+ 	/* below makes it bleed to edge */
+ 	border-radius: 0px;
+ }
+ .wpmudev-chat-message {
+ 	position: relative;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	margin-top: 5px;
+ 	color: #51666b !important;
+ 	/*min-height: 40px;*/
+ 	background: #cccccc;
+ 	border-radius: 5px;
+ 	border-width: 0px;
+ 	border-style: solid;
+ 	border-color: #b3e4ef transparent;
+ 	border-top: 0px;
+ }
+
+
+textarea.wpmudev-chat-send::placeholder{
+	text-align: left;
+	    font-size: .8rem !important;
+    line-height: 40px !important;
+}
+ textarea.wpmudev-chat-send {
+ 	float: left!important;
+ 	border: 1px solid #CCC!important;
+ 	padding: 5px!important;
+ 	color: #000!important;
+ 	width: 95% !important;
+ }
+ .bubble-chat .container {
+ 	margin: 5px;
+ }
+ .wpmudev-chat-module-message-area .wpmudev-chat-send {
+ 	margin-bottom: 0px !important;
+ }
+ #wpmudev-chat-box-page-7662 div.wpmudev-chat-module-message-area textarea.wpmudev-chat-send {
+ 	height: 50px !important;
+ }
+ div.wpmudev-chat-box div.wpmudev-chat-module-messages-list div.wpmudev-chat-row ul.wpmudev-chat-row-footer {
+ 	display: none !important;
+ }
+ .wpmudev-chat-module-message-area .wpmudev-chat-send {
+ 	-webkit-appearance: none;
+ 	margin: 0px !important;
+ 	padding-right: 50px !important;
+ 	height: 50px !important;
+ 	width: 100% !important;
+ 	/*margin-top: 6px !important;*/
+ 	border-radius: 0px;
+ 	/*border-top-right-radius:30px;*/
+ }
+ .wpmudev-chat-module-message-area .wpmudev-chat-send, .wpmudev-chat-module-message-area .wpmudev-chat-send-button {
+ 	/*margin:5px;    margin-top: 1px;*/
+ }
+ #wpmudev-chat-box-page-6880 div.wpmudev-chat-module-messages-list {
+ 	width: 98% !important;
+ }
+
+.wpmudev-chat-box-page {
+ 	margin-top:20px !important;
+ }
+ .chatroom.native .entry-header {
+ 	display: none;
+ }
+ .chatroom.native .entry-content {
+ 	margin-top: 0px !important;
+ }
+ .page-template-page-mashboard .wpmudev-chat-box-page {
+ 	margin-top: 10px !important;
+ }
+ .wpmudev-chat-module-messages-list {
+ 	background-color: inherit !important;
+ }
+
+ #wpmudev-chat-box-post-8716 div.wpmudev-chat-module-message-area textarea.wpmudev-chat-send {
+ 	height: 50px !important;
+ }
+
+
+/* chatroom ------------------------------------------------------------------------------------------------------------ */
+
+.wpmudev-chat-module-messages-list {
+	background-color: #ffffff !important;
+}
+.wpmudev-chat-row {
+	/*background-color: #ffffff!important;*/
+}
+#wpmudev-chat-box-post-5253 div.wpmudev-chat-module-messages-list {
+	background: #f1f1f1;
+	background-color: #f1f1f1;
+}
+.wpmudev-chat-message {
+	color: #929292 !important;
+	background: none;
+	border-color: #b3e4ef transparent;
+}
+.wpcf7-submit {
+	background-color: #1bbae1 !important;
+	background: #1e8cbe !important;
+	color: #fff !important;
+}
+.gform_button, .comment-form-comment label, .wpmudev-chat-send-button {
+	background: #6ad2ef;
+	color: #ffffff;
+}
+

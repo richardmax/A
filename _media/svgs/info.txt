@@ -1,0 +1,11 @@
+All icons originally taken from: https://material.io/tools/icons/
+
+Then some edited by rm.
+
+All renamed.
+
+In future all icons must respect material design principals as that is the future ui of commmunio with react too.
+
+
+PLEASE NOTE THESE SVGS CAN ALL BE COLOURED DYNAMICALLY VIA CODE... JUST OPEN SVG IN TXT EDITOR AND CHANGFE THE STYLES HEX VALUE... BINGO - BETTER THAN ORIGINAL MATERIAL ICONS!!! RICCY YOU DUDE!
+

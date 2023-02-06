@@ -1,0 +1,20 @@
+body {
+    background: #293237 !important;
+}
+
+.login .button-primary, p#nav a, .fb-ackit-toggle a, .fb-ackit-login-forms a {
+    background: #ff7d1f !important;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary{
+	color: #ff7d1f;
+}
+
+.login h1 a {
+    background-image: url(icon.png);
+	height: 230px;
+	margin-top: 30px;
+	background-size: 200px 200px;
+	width: 200px;
+	margin-bottom: 0;
+}

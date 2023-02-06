@@ -1,0 +1,135 @@
+/* CSS Document */
+
+/*
+2a2422
+3c3c3b
+157c9b
+81c0cd
+009fe3
+ffffff
+------
+#ff7d1f
+*/
+body{
+	margin:0px;
+}
+.container{
+	margin:0px;
+}
+
+.card{
+	display: block;
+	background-color: #ffffff;
+	min-height: 400px;
+	width: 300px;
+	color: #2a2422;
+	    max-height: 300px;
+}
+
+.card-img-top{
+	width: 100%;
+	height: 200px;
+	background-color: #3c3c3b;
+}
+
+.card-block{
+	margin: 30px;
+}
+
+.card-block p{
+	display:none;
+}
+
+.btn-primary{
+	background-color: 157c9b;
+}
+
+
+
+
+/////////////////
+
+body{width:100%; height:100%; margin:0px;}
+
+    .geobubble {
+      /*position: relative;
+      width: 100%;*/
+      margin: 50px 0;
+      text-align: center;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #999;
+    }
+	
+	
+	.geobubble .footer {
+	  /*margin-left:-10px;*/
+    }
+    .geobubble .title {
+      font-size: 1em;
+	  line-height: 1em;
+    }
+	.geobubble p {
+      font-size: 1em;
+	  min-height: 1em;
+	  line-height: 1em;
+	  max-height: 2em;
+	  overflow:hidden;
+    }
+	.geobubble .image img {
+      width:100%;
+	  height:100%;
+    }
+    .geobubble .footer {
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+      background: #555;
+	  font-size: 2em;
+    }
+    .geobubble .footer span {
+      border: 0px;
+      cursor: pointer;
+      display: inline-block;
+      padding: 0;
+	  width: 23%;
+	  margin: 0;
+	  height:50px;
+    }
+    .geobubble .footer span:hover {
+      background: #eee;
+    }
+    .geobubble .interactions .down {
+      /*margin-right: .3em;*/
+    }
+    .geobubble .interactions .down:before {
+      content: "👎 ";
+    }
+    .geobubble .interactions .up {
+      /*margin-left: .3em;*/
+    }
+    .geobubble .interactions .up:before {
+      content: "👍 ";
+    }
+    .my-favourites ul{
+      list-style: none;
+      padding: 0;
+    }
+    .my-favourites ul li{
+      padding-bottom: .5em;
+      margin-bottom: .5em;
+      border-bottom: 1px solid #eee;
+    }
+    a{
+      text-decoration: none;
+      color: #69c;
+    }
+    a:hover{
+      color: #699;
+    }
+    .clear-list{
+      color: #930;
+    }
+    .clear-list:hover{
+      color: #600;
+    }
+

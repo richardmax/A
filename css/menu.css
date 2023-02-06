@@ -1,0 +1,260 @@
+.gn-menu-main li {
+    max-height: none !important;
+}
+
+
+
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Jaldi", sans-serif;
+  color: #ffffff;
+  background-color: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #a0f6aa;
+  text-decoration: none;
+}
+
+h1, h2 {
+  text-align: center;
+  width: 90%;
+  margin: 2em auto 0;
+  color: #507b55;
+  font-weight: bold;
+}
+h1 a, h2 a {
+  color: #507b55;
+}
+@media only screen and (min-width: 600px) {
+  h1, h2 {
+    font-size: 3.2rem;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+input {
+  font-family: "Jaldi", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.accordion-collection {
+  width: 90%;
+  max-width: 600px;
+  background: #4d5158;
+  margin: 4em auto;
+  box-shadow: 0 4px 40px #70ac77;
+  padding: 0;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.accordion-collection ul {
+  /* by default hide all sub menus */
+  display: none;
+  padding: 0;
+}
+.accordion-collection li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  list-style: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.accordion-collection input[type=checkbox] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+.accordion-collection label, .accordion-collection a {
+  /*position: relative;*/
+  display: block;
+  padding: 18px 18px 18px 64px;
+  background: #4d5158;
+  box-shadow: inset 0 -1px #565a60;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.no-touch .accordion-collection label:hover, .no-touch .accordion-collection a:hover {
+  background: #52565d;
+}
+.accordion-collection label::before, .accordion-collection label::after, .accordion-collection a::after {
+  /* icons */
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.accordion-collection label {
+  cursor: pointer;
+}
+.accordion-collection label::before, .accordion-collection label::after {
+  background-image: url("https://codyhouse.co/demo/multi-level-accordion-menu/img/cd-icons.svg");
+  background-repeat: no-repeat;
+}
+.accordion-collection label::before {
+  /* arrow icon */
+  left: 18px;
+  background-position: 0 0;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+.accordion-collection label::after {
+  /* folder icons */
+  left: 41px;
+  background-position: -16px 0;
+}
+.accordion-collection a::after {
+  /* image icon */
+  left: 36px;
+  background: url(https://codyhouse.co/demo/multi-level-accordion-menu/img/cd-icons.svg) no-repeat -48px 0;
+}
+.accordion-collection input[type=checkbox]:checked + label::before {
+  /* rotate arrow */
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.accordion-collection input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  background-position: -32px 0;
+}
+.accordion-collection input[type=checkbox]:checked + label + ul,
+.accordion-collection input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+  display: block;
+}
+.accordion-collection ul label,
+.accordion-collection ul a {
+  background: #35383d;
+  box-shadow: inset 0 -1px #41444a;
+  padding-left: 82px;
+}
+.no-touch .accordion-collection ul label:hover,
+.no-touch .accordion-collection ul a:hover {
+  background: #3c3f45;
+}
+.accordion-collection > li:last-of-type > label,
+.accordion-collection > li:last-of-type > a,
+.accordion-collection > li > ul > li:last-of-type label,
+.accordion-collection > li > ul > li:last-of-type a {
+  box-shadow: none;
+}
+.accordion-collection ul label::before {
+  left: 36px;
+}
+.accordion-collection ul label::after,
+.accordion-collection ul a::after {
+  left: 59px;
+}
+.accordion-collection ul ul label,
+.accordion-collection ul ul a {
+  padding-left: 100px;
+}
+.accordion-collection ul ul label::before {
+  left: 54px;
+}
+.accordion-collection ul ul label::after,
+.accordion-collection ul ul a::after {
+  left: 77px;
+}
+.accordion-collection ul ul ul label,
+.accordion-collection ul ul ul a {
+  padding-left: 118px;
+}
+.accordion-collection ul ul ul label::before {
+  left: 72px;
+}
+.accordion-collection ul ul ul label::after,
+.accordion-collection ul ul ul a::after {
+  left: 95px;
+}
+@media only screen and (min-width: 600px) {
+  .accordion-collection label, .accordion-collection a {
+    padding: 24px 24px 24px 82px;
+    font-size: 1.9rem;
+  }
+  .accordion-collection label::before {
+    left: 24px;
+  }
+  .accordion-collection label::after {
+    left: 53px;
+  }
+  .accordion-collection ul label,
+  .accordion-collection ul a {
+    padding-left: 106px;
+  }
+  .accordion-collection ul label::before {
+    left: 48px;
+  }
+  .accordion-collection ul label::after,
+  .accordion-collection ul a::after {
+    left: 77px;
+  }
+  .accordion-collection ul ul label,
+  .accordion-collection ul ul a {
+    padding-left: 130px;
+  }
+  .accordion-collection ul ul label::before {
+    left: 72px;
+  }
+  .accordion-collection ul ul label::after,
+  .accordion-collection ul ul a::after {
+    left: 101px;
+  }
+  .accordion-collection ul ul ul label,
+  .accordion-collection ul ul ul a {
+    padding-left: 154px;
+  }
+  .accordion-collection ul ul ul label::before {
+    left: 96px;
+  }
+  .accordion-collection ul ul ul label::after,
+  .accordion-collection ul ul ul a::after {
+    left: 125px;
+  }
+}

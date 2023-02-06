@@ -1,0 +1,557 @@
+<!doctype html>
+<html class="export" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Filter &amp; sort magical layouts">
+
+  <title>QPilot</title>
+
+    <!-- Isotope does not require any CSS files -->
+    <link rel="stylesheet" href="css/isotope-docs.css?6" media="screen">
+
+</head>
+<body class="page--filtering">
+	
+	<style type='text/css'>
+		
+		body {
+    color: #EEE;
+    background: #1b2032;
+}
+	.grid {
+    border: 0px solid #484542;
+    background: none;
+    position: relative;
+		top: 20px;
+}
+		
+	.element-item {
+		position: relative;
+		float: left;
+		width: 200px;
+		height: 300px;
+		margin: 5px;
+		padding: 10px;
+		background: #ffffff;
+		color: #262524;
+	}
+		
+		.number{
+		    background-image: url(images/pin.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 55px;
+    padding-left: 20px;
+    background-size: 33%;
+		}
+		
+		.element-item.advert {
+		position: relative;
+		float: left;
+		width: 410px;
+		height: 300px;
+		margin: 5px;
+		padding: 10px;
+
+		color: #262524;
+				background-image: url("images/advert.jpeg");
+	}
+	
+		.company.qpilot{
+			background-image: url("images/qpilot.jpg");
+		}
+		.company.ebay{
+			background-image: url("images/ebay.jpg");
+		}
+		.company.gumtree{
+			background-image: url("images/gumtree.jpg");
+		}
+		.company.shpock{
+			background-image: url("images/shpock.jpg");
+		}
+		.company.nextdoor{
+			background-image: url("images/nextdoor.jpg");
+		}
+		
+		.company.advert{
+			background-image: url( "images/2000-qdos.jpg");
+		}
+		
+		
+		.image{
+			    width: 200px;
+    margin: -10px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+		}
+		
+		.element-item .price {
+       position: absolute !important;
+    left: 10px !important;
+    bottom: 10px !important;
+       font-size: 1.2em !important;
+    color: #2700ff;
+    top: auto !important;
+}
+		
+		.element-item .number {
+			
+    position: absolute !important;
+    right: 10px !important;
+    bottom: 10px !important;
+			top: auto !important;
+}
+		
+		.element-item .name {
+    position: absolute;
+    left: 10px;
+    top: 160px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1em;
+    font-price: normal;
+}
+		
+		.company {
+   text-align: right;
+    background-color: #fff;
+    margin-right: -10px;
+    float: right;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    /* padding: 10px 20px; */
+    width: 60px;
+    height: 50px;
+    border-top-left-radius: 20px;
+    /* margin-top: -10px; */
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+			font-size: 0px;
+}
+		
+		.menu {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+		
+	.description {
+    top: 185px;
+    font-size: 0.8em;
+    position: absolute;
+}
+		.element-item.actinoid,
+		.element-item.noble-gas,.element-item.diatomic,
+		.element-item.lanthanoid{background:#fff !important;}
+		
+		.button-group {text-align: center;  margin: 0 30px;     display: inline-block;}
+		.button-group .button{float:none;     margin-left: -10px;}
+	
+	</style> 
+
+
+<div class="big-demo go-wide" data-js="filtering-demo">
+	
+	<p style='text-align: center'>The following static demo is illustrating the results page of a user searching for lawnmowers via the QPilot platform.</p>
+	
+	<p style='text-align: center'>The idea is you can see both what you can rent / buy from QPilot users with QPoints currency or buy from other affiliated sites from QPilot users or potantially others.</p>
+	
+	<p style='text-align: center'>Users can then easily filter these resuklts by the buttons illustarted above. Please note that this is an illustrative prototype and the filters and cards in the production version wpould be far supperior in terms of design.  ie. The distance should be a slider. The platforms shoukld be icons etc.</p>
+	<div class='menu'>
+  <div class="filter-button-group button-group js-radio-button-group">
+    <!-- button class="button is-checked" data-filter="*">show all</button --> 
+    <!-- button class="button" data-filter=".gardening">gardening</button -->
+    <button class="button" data-filter=".lawnmower">lawnmower</button>
+	  <button class="button" data-filter=".rideon">ride on lawnmower</button>
+	   <button class="button" data-filter=".hedgecutter">hedgecutter</button>
+	  	   <button class="button" data-filter=".strimmer">strimmer</button>
+    <!--  button class="button" data-filter=".strimmer, .hedgecutter">strimmer &amp; hedgecutter</button  -->
+    <button class="button" data-filter=":not(.lawnmower)">not lawnmower</button>
+    <button class="button" data-filter=".gardening:not(.lawnmower)">gardening but not lawnmower</button>
+
+  
+  </div>
+
+	
+	  <div class="filter-button-group button-group js-radio-button-group">
+
+    <button class="button" data-filter=".qpilot">QPilot</button>
+	<button class="button" data-filter=".ebay">Ebay</button>
+    <button class="button" data-filter=".gumtree">GumTree</button>
+   <button class="button" data-filter=".shpock">Shpock</button>
+		   <button class="button" data-filter=".nextdoor">NextDoor</button>
+  </div>
+	
+		
+	  <div class="filter-button-group button-group js-radio-button-group">
+
+    <button class="button" data-filter=".p100">Under £100</button>
+	<button class="button" data-filter=".p200">Between £100 & £200</button>
+    <button class="button" data-filter=".p300">Over £200</button>
+  
+  </div>
+	
+	  <div class="filter-button-group button-group js-radio-button-group">
+
+    <button class="button" data-filter=".rent">Rent</button>
+	<button class="button" data-filter=".buy">Buy</button>
+  
+  </div>
+	
+		  <div class="filter-button-group button-group js-radio-button-group">
+
+
+	<button class="button" data-filter=".distance-0">Below 50km</button>
+    <button class="button" data-filter=".distance-1">Below 10km</button>
+  
+  </div>
+	
+		  <div class="filter-button-group button-group js-radio-button-group">
+
+
+	<button class="button" data-filter=".advert">My Q Offers</button>
+
+  
+  </div>
+	</div>
+	
+	<!--div id="sorts" class="button-group"> <button class="button" data-sort-by="original-order">original order</button>
+<button class="button" data-sort-by="name">name</button>
+<button class="button is-checked" data-sort-by="symbol">symbol</button>
+<button class="button" data-sort-by="number">number</button>
+<button class="button" data-sort-by="price">£price</button>
+<button class="button" data-sort-by="category">category</button>
+</div>
+  <pre class="code-display"><code>$grid.isotope({...})</code></pre -->
+	
+	
+	
+	<!-- TO ADD - ebay etc filter on search, qtopia posts = from intrenal users,  rent vs buy, put site on server
+
+- i need clear list of deliverables -->
+
+  <div class="grid">
+      <div class="element-item rent gardening lawnmower qpilot  distance-1   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/X1.jpg)"></div>
+		<h5 class="name">Rent My Lawn Mower</h5>
+		<p class="description">Mtd rh115b in good working order easy started. New bag and frame and battery. Contact 07849576204 for more info. </p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">9km</p>
+        <p class="price">140 QP</p>
+      </div>
+	  
+	  
+	  
+	  
+
+      <div class="element-item rent gardening lawnmower qpilot  distance-1   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/X2.jpeg)"></div>
+		<h5 class="name">Happy Valley Mower</h5>
+		<p class="description">Good working order easy started. New bag and frame and battery. hIRE PO </p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">9km</p>
+        <p class="price">90 QP</p>
+      </div>
+	  
+	  
+	  
+	  
+	     <div class="element-item rent gardening lawnmower qpilot  distance-1   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/X3.jpg)"></div>
+		<h5 class="name">Happy Valley Mower</h5>
+		<p class="description">New bag and frame and battery. Rent me anytime. </p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">17km</p>
+        <p class="price">120 QP</p>
+      </div>
+	  
+	  
+	  
+	    
+	     <div class="element-item rent gardening lawnmower qpilot  distance-1   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/X4.jpeg)"></div>
+		<h5 class="name">Lawn Mower Available</h5>
+		<p class="description">Powerful, useful. Just needs collecting.</p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">6km</p>
+        <p class="price">130 QP</p>
+      </div>
+	  
+	  
+	  	     <div class="element-item rent gardening lawnmower qpilot  distance-1   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/x5.jpeg)"></div>
+		<h5 class="name">Lawn Mower To Rent</h5>
+		<p class="description">Avaiaoble to users with 2000+ QDOS</p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">16km</p>
+        <p class="price">220 QP</p>
+      </div>
+	  
+	  
+	  
+	  	     <div class="element-item rent gardening lawnmower qpilot  distance-0   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/X6.jpg)"></div>
+		<h5 class="name">Retired Lawn Mower</h5>
+		<p class="description">Rental cost includes delivery by trailer.</p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">6km</p>
+        <p class="price">25 QP</p>
+      </div>
+	  
+	  
+	  
+	    
+	  
+	  	     <div class="element-item rent gardening lawnmower qpilot  distance-0   rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/X7.jpeg)"></div>
+		<h5 class="name">Modern Lawnmower</h5>
+		<p class="description">This lawnmower must be collected by the hirer.</p>
+        <p class="company qpilot">Hg</p>
+        <p class="number">6km</p>
+        <p class="price">200 QP</p>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="element-item buy gardening ebay lawnmower rideon p300" data-category="lawnmower MOUNTFIELD">
+        <div class="image" style="background-image: url(images/1.png)"></div>
+		<h5 class="name">Red Ride On Lawn Mower</h5>
+		<p class="description">Mtd rh115b in good working order easy started. New bag and frame and battery. Contact 07849576204 for more info. </p>
+        <p class="company ebay">Hg</p>
+        <p class="number">80km</p>
+        <p class="price">£200</p>
+      </div>
+      <div class="element-item buy gardening ebay lawnmower  distance-1 push p200" data-category="gardeningloid">
+        <div class="image" style="background-image: url(images/2.jpeg)"></div>
+		  <h5 class="name">Gardenmaster mower</h5>
+		  <p class="description">One of the best lawnmower engines the is briggs and stratton checked over and running great  </p>
+        
+        <p class="company ebay">Te</p>
+        <p class="number">9km</p>
+        <p class="price">£127</p>
+      </div>
+      <div class="element-item buy gardening shpock lawnmower push p300" data-category="post-lawnmower">
+       <div class="image" style="background-image: url(images/3.jpg)"></div>
+		  <h5 class="name">MOUNTFIELD MOWER</h5>
+		  <p class="description">This is the product description. This is the product description. This is the product descis is the product description. </p>
+        
+        <p class="company shpock">Bi</p>
+        <p class="number">83km</p>
+        <p class="price">£208</p>
+      </div>
+      <div class="element-item buy gardening shpock lawnmower  distance-1 push p300" data-category="post-lawnmower">
+      <div class="image" style="background-image: url(images/4.jpeg)"></div>
+		  <h5 class="name">Ryno electric lawnmower</h5>
+		  <p class="description">Ryno electric lawnmower excellent working order selling due to change of design of garden so not required </p>
+        
+        <p class="company shpock">Pb</p>
+        <p class="number">2km</p>
+        <p class="price">£207</p>
+      </div>
+      <div class="element-item buy gardening ebay lawnmower push p200" data-category="lawnmower">
+      <div class="image" style="background-image: url(images/5.jpeg)"></div>
+		  <h5 class="name">Challenge Xtreme</h5>
+		  <p class="description">Challenge Xtreme Electric Lawnmower,  Fully working, In good condition,  Need to go ASAP </p>
+        
+        <p class="company ebay">Challenge Xtreme</p>
+        <p class="number">79km</p>
+        <p class="price">£196</p>
+      </div>
+      <div class="element-item buy gardening nextdoor lawnmower distance-0 p100" data-category="flymo">
+        <div class="image" style="background-image: url(images/6.jpg)"></div>
+		  <h5 class="name">Hyundai HYM510SPE</h5>
+		  <p class="description">Hyundai HYM510SPE Self Propelled Electric Start 173cc Flymo.</p>
+        
+        <p class="company nextdoor">K</p>
+        <p class="number">19km</p>
+        <p class="price">£39</p>
+      </div>
+	      <div class="element-item buy gardening lawnmower ebay push  p200 " data-category="gardeningloid">
+		   <div class="image" style="background-image: url(images/12.jpeg)"></div>
+        <h5 class="name">Flymo Easi Glide</h5>
+		  <p class="description">Flymo Easi Glide 330 Hover Collect Mower Bronze Grade </p>
+        
+        <p class="company  ebay">Sb</p>
+        <p class="number">51km</p>
+        <p class="price">£121</p>
+      </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      <div class="element-item buy gardening hedgecutter ebay distance-0 p100" data-category="flymo">
+		         <div class="image" style="background-image: url(images/7.jpg)"></div>
+        <h5 class="name">Bosch Hedge Cutter</h5>
+		  <p class="description">Bosch Ahs 4516 Electrical Hedge Trimmer for Gardening Hedgecutter</p>
+        
+        <p class="company ebay">Na</p>
+        <p class="number">11km</p>
+        <p class="price">£22</p>
+      </div>
+      <div class="element-item buy gardening hedgecutter gumtree p200 " data-category="lawnmower">
+		         <div class="image" style="background-image: url(images/8.jpeg)"></div>
+        <h5 class="name">Gonzola Hedge Cutter</h5>
+		  <p class="description">Hedge Trimmer Battery Powered Ni-Cd 18 V 1300 Ma Handle Adjustable </p>
+        
+        <p class="company gumtree">Cd</p>
+        <p class="number">48km</p>
+        <p class="price">£112</p>
+      </div>
+    
+      <div class="element-item buy gardening shpock hedgecutter  p200" data-category="lawnmower">
+		         <div class="image" style="background-image: url(images/9.jpg)"></div>
+        <h5 class="name">Universal Hedge cutter</h5>
+		  <p class="description">Universal grasscut 18-260 - ) Trimmer a Battery (1 Lithium 18V 2</p>
+        
+        <p class="company  shpock">Re</p>
+        <p class="number">75km</p>
+        <p class="price">£186</p>
+      </div>
+      <div class="element-item buy gardening gumtree hedgecutter p300 " data-category="post-lawnmower">
+		         <div class="image" style="background-image: url(images/10.jpg)"></div>
+        <h5 class="name">52cc Long Reach Cutter</h5>
+		  <p class="description">52cc Petrol Long Reach Hedge Trimmer Garden Tool 3HP Extension Pole Cutter 2.2KW</p>
+        
+        <p class="company gumtree">Tl</p>
+        <p class="number">81km</p>
+        <p class="price">£204</p>
+      </div>
+	    <div class="element-item buy gardening shpock hedgecutter distance-0 p100" data-category="hedgecutter">
+			<div class="image" style="background-image: url(images/11.jpeg)"></div>
+        <h5 class="name">Cordless Hedge Trimmer</h5>
+		  <p class="description">Cordless Pole Hedge Trimmer Bush Strimmer Garden Shrubbery Clippers Tree Shears</p>
+        
+        <p class="company shpock">Ca</p>
+        <p class="number">20km</p>
+        <p class="price">£40</p>
+      </div>
+  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  	   <div class="element-item buy gardening lawnmower advert" data-category="advert lawnmower">
+        
+        <p class="company advert">K</p>
+
+      </div> 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      <div class="element-item buy gardening ebay lawnmower rideon distance-0 p100" data-category="lawnmower">
+		    <div class="image" style="background-image: url(images/13.jpg)"></div>
+        <h5 class="name">Mountfield 827M</h5>
+		  <p class="description">This is a Mountfield 827M Ride On Mower 2016 sit on lawn garden tractor. </p>
+        
+        <p class="company ebay">Co</p>
+        <p class="number">27km</p>
+        <p class="price">£58</p>
+      </div>
+      <div class="element-item buy gardening  lawnmower shpock rideon  p200 " data-category="lanthanoid">
+		    <div class="image" style="background-image: url(images/14.jpg)"></div>
+        <h5 class="name">Countax ride on mower</h5>
+		  <p class="description">Countax electric lawnmower excellent working order selling due to change of design of garden so not required</p>
+        
+        <p class="company shpock">Yb</p>
+        <p class="number">70km</p>
+        <p class="price">£173</p>
+      </div>
+      <div class="element-item buy gardening nextdoor lawnmower rideon  distance-0 p100" data-category="noble-gas">
+		    <div class="image" style="background-image: url(images/16.jpg)"></div>
+        <h5 class="name">Honda HF2417</h5>
+		  <p class="description">Honda HF2417 Hydrostatic Ride on lawnmower GCV530 Engine Mower 40" Cut</p>
+        
+        <p class="company nextdoor">Ar</p>
+        <p class="number">18km</p>
+        <p class="price">£39</p>
+      </div>
+      <div class="element-item buy gardening gumtree lawnmower rideon distance-1 distance-0  p100" data-category="diatomic">
+		  		    <div class="image" style="background-image: url(images/17.jpg)"></div>
+        <h5 class="name">Turfmaster Lawn Mower</h5>
+		  <p class="description">Turfmaster Ride On Lawn Mower 12.5HP 40" Deck</p>
+        
+        <p class="company gumtree">N</p>
+        <p class="number">7km</p>
+        <p class="price">£14</p>
+      </div>
+      <div class="element-item buy gardening shpock strimmer p300 " data-category="actinoid">
+		  		    <div class="image" style="background-image: url(images/18.jpg)"></div>
+        <h5 class="name">Terratek 20V MaX</h5>
+		  <p class="description">Terratek 20V Max Lithium Ion Cordless Grass Trimmer Strimmer Edger </p>
+        
+        <p class="company shpock">U</p>
+        <p class="number">92km</p>
+        <p class="price">£238</p>
+      </div>
+      <div class="element-item buy gardening strimmer shpock p300 " data-category="actinoid">
+		  		    <div class="image" style="background-image: url(images/19.jpeg)"></div>
+        <h5 class="name">Pluto hedge Strimmer</h5>
+		  <p class="description">52cc 5 in 1 Hedge Trimmer Multi Tool Petrol Strimmer BrushCutter Garden Chainsaw </p>
+        
+        <p class="company shpock">Pu</p>
+        <p class="number">94km</p>
+        <p class="price">£244</p>
+      </div>
+  </div>
+
+</div>
+	
+
+
+<!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
+<!-- Isotope does NOT require jQuery. But it does make things easier -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+<script src="js/isotope-docs.min.js?6"></script>
+
+</body>
+</html>

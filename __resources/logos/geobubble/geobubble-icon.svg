@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 298.9 300" style="enable-background:new 0 0 298.9 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5695;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path6182_1_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path6184_1_);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path6186_1_);}
+</style>
+<title>geobubble-icon</title>
+<g id="layer1" transform="translate(0,-924.36218)">
+	<g id="g6180" transform="matrix(0.93829122,0,0,0.93829122,30.723316,381.88832)" class="st0">
+		
+			<radialGradient id="path6182_1_" cx="0.3447" cy="828.4168" r="159.843" gradientTransform="matrix(1.6457 0 0 -1.5911 56.7022 1975.7325)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#D5F6FF"/>
+			<stop  offset="0.3368" style="stop-color:#00CCFF"/>
+			<stop  offset="0.7144" style="stop-color:#D4F6FF"/>
+			<stop  offset="1" style="stop-color:#00AAD4"/>
+		</radialGradient>
+		<path id="path6182" class="st1" d="M286.9,738c0,88.3-71.6,159.8-159.8,159.8S-32.7,826.3-32.7,738s71.6-159.8,159.8-159.8
+			S286.9,649.7,286.9,738z"/>
+		
+			<radialGradient id="path6184_1_" cx="72.9094" cy="886.9414" r="159.843" gradientTransform="matrix(1.2879 0 0 -0.6664 29.4962 1182.5636)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</radialGradient>
+		<path id="path6184" class="st2" d="M209.6,637.8c0,25.8-37.9,46.7-84.6,46.7s-84.6-20.9-84.6-46.7s37.9-46.7,84.6-46.7
+			S209.6,612,209.6,637.8z"/>
+		
+			<radialGradient id="path6186_1_" cx="0.3447" cy="828.4168" r="159.843" gradientTransform="matrix(1.6457 0 0 -1.5911 56.7022 1975.7325)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#C0DDE6"/>
+			<stop  offset="0.3368" style="stop-color:#00B8E6"/>
+			<stop  offset="0.7144" style="stop-color:#BFDDE6"/>
+			<stop  offset="1" style="stop-color:#0099BF"/>
+		</radialGradient>
+		<path id="path6186" class="st3" d="M226.3,612.8c28.9,28.9,46.8,68.9,46.8,113.1c0,88.3-71.6,159.9-159.9,159.9
+			c-37.1,0-71.2-12.8-98.4-34c28.9,28.5,68.4,46.2,112.2,46.2c88.3,0,159.9-71.6,159.9-159.9C286.9,687.3,263.2,642.1,226.3,612.8z"
+			/>
+	</g>
+</g>
+</svg>

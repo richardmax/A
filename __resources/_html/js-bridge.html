@@ -1,0 +1,74 @@
+<html>
+<head>
+    <script type="application/javascript">
+
+               var JSPlugin = new function()
+                 {
+                   var x, y;
+
+                   this.showToast = function(msg) {
+                   JSBridgePlugin.showToast(msg);
+                   };
+
+                   this.showDialog=function(msg) {
+                   JSBridgePlugin.showDialog(msg);
+                   };
+
+                    this.withCallback=function(msg) {
+                        JSBridgePlugin.withCallback(msg, 'JSPluginCallbackHandler.readData');
+                        };
+                 };
+                    var myLat = null;
+                    function getLatFromAndroidNative() {
+                        myLat = JSBridgePlugin.getLatFromAndroidNative();
+                        document.getElementById("txtlat").value = myLat;
+                    }
+
+                    var myLng = null;
+                    function getLngFromAndroidNative() {
+                        myLng = JSBridgePlugin.getLngFromAndroidNative();
+                        document.getElementById("txtlng").value = myLng;
+                    }
+
+                    var myAddress = null;
+                    function getAddressFromAndroidNative() {
+                        myAddress = JSBridgePlugin.getAddressFromAndroidNative();
+                        document.getElementById("txtAddress").value = myAddress;
+                    }
+
+                    window.onload = function() {
+                        getLatFromAndroidNative();
+                        getLngFromAndroidNative();
+                        getAddressFromAndroidNative();
+                    }
+    </script>
+</head>
+<body>
+<div>Welcome to JSBridge WebView!!<br>Android needs to pass the long, lat from the device every
+    [menu_item_js_poll_rate] seconds to this html page via js.Must trigger an is_updated .
+    function
+    in JS too so i can use this to trigger events, thats it.
+
+    <center>
+
+        <div id="data" style="height:100%;width:100%;background-color:#ffffcc;"></div>
+
+    </center>
+    <label>Address: </label>
+
+    <div><input id="txtAddress" type="text" name="address" disabled style="width: 100%">
+    </div>
+
+    Latitude: <input id="txtlat" type="text" name="latitude"><br>
+    Longitude: <input id="txtlng" type="text" name="longitude"><br>
+
+    </form>
+    <br> <input type="button" value="JSPlugin:showToast"
+                onClick="JSPlugin.showToast('From JS To WebView Android :)')"/><br/>
+    <input type="button" value="JSPlugin:showDialog"
+           onClick="JSPlugin.showDialog('From JS To WebView Android12 :)')"/><br/>
+    <input type="button" value="JSPlugin:callback"
+           onClick="JSPlugin.withCallback('Callback Data :)')"/><br/>
+</div>
+</body>
+</html>

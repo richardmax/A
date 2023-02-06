@@ -1,0 +1,381 @@
+/* CSS Document */
+/* DEFAULT APP COLOURS ===================== */
+/* 
+// thanks google! :) 
+
+https://material.io/guidelines/style/color.html#color-color-palette
+
+Blue Grey
+500 #607D8B
+50#ECEFF1
+100#CFD8DC
+200#B0BEC5
+300#90A4AE
+400#78909C
+500#607D8B
+600#546E7A
+700#455A64
+800#37474F
+900
+
+*/
+
+.app-header {
+	background-color: #263238;
+}
+ul.app-menu, .menu-footer {
+	background: #CFD8DC;
+}
+.app-menu a, .menu-footer {
+	color: #37474f;
+}
+.card header {
+	background-color: #0532487a;
+}
+.card .content {
+	background-color: #cfd8dc;
+}
+.card .footer {
+	background-color: #607d8b;
+}
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
+	font-weight: 300;
+	color: #fff;
+}
+
+/* COLOURS ------------------------------------------------------------------------------------------------------- */
+.is_selected{
+    -webkit-filter: contrast(200%);
+    -moz-filter: contrast(200%);
+    -ms-filter: contrast(200%);
+    -o-filter: contrast(200%);
+    -webkit-filter: contrast(200%);
+}
+
+/* cards */
+.entry-meta .bubble-type {
+	-webkit-filter: grayscale;
+	-webkit-filter: brightness(0%);
+}
+.entry-header .bubble-type {
+	-webkit-filter: none;
+}
+/*.entry-content {
+	background-color: #ffffff !important;
+}*/
+.dashboard .entry-content {
+	background-color: #efefef !important;
+}
+input[type=radio] {
+	border-colour: #efefef;
+}
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+	color: #2d80d2;
+}
+.entry-content .author-box h1, .entry-content .author-box h2, .entry-content .author-box h3, .entry-content .author-box h4, .entry-content .author-box h5, .entry-content .author-box h6 {
+	color: #ffffff !important;
+}
+#footer a {
+	color: #efefef
+}
+.gn-menu .avatar-100 {
+	border: 1px solid #ffffff;
+}
+.gn-menu-main #cat_filters a {
+	background-color: #2d80d2 !important;
+}
+.single .entry-header h1 {
+	opacity: 1;
+	background-color: #2d80d2 !important;
+}
+
+.page-template-page-iframe .create-content-but h2 {
+	color: #fff;
+}
+.gn-menu li:hover, .no-touch .gn-menu li:hover a {
+	background: #2d80d2;
+}
+.native .gn-menu-main>li>a {
+	background-color: none !important;
+}
+.entry-title {
+	color: #ffffff;
+}
+.author-box-bg {
+	opacity: .7;
+}
+.gn-menu li:not(:first-child), .gn-menu li li {
+	box-shadow: inset 0 1px #272727;
+}
+.native .gn-menu li.gn-search-item:hover, .native .gn-menu-main a:hover, .no-touch .gn-menu li.gn-search-item:hover a {
+	background: none !important;
+}
+#cat_filters {
+	background: #cccccc;
+}
+.create-content-but h2 {
+	color: #ffffff;
+}
+.button {
+	background-color: #ccc;
+	color: #ffffff;
+}
+.button:hover {
+	background: #44c6ff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#44c6ff), to(#2a7ac8));
+	background: -moz-linear-gradient(top, #44c6ff, #2a7ac8);
+	background: linear-gradient(to bottom, #44c6ff, #2a7ac8);
+	color: #ffffff;
+}
+.button:active {
+	background: #2366a7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2366a7), to(#2366a7));
+	background: -moz-linear-gradient(top, #2366a7, #2366a7);
+	background: linear-gradient(to bottom, #2366a7, #2366a7);
+}
+.meta-holder .button:before {
+	content: "\0000a0";
+}
+audio {
+	background: #fafafa;
+}
+
+/* social networks ---------------------------------------------------------------- */
+
+.item.spotify {
+	background-color: #5A5A5A !important;
+}
+.item.soundcloud {
+	background-color: #FDFFFE !important;
+}
+.item.facebook {
+	background-color: #F6F7F8 !important;
+}
+.item.twitter {
+	background-color: #ffffff !important;
+}
+.item.instagram {
+	background-color: #F6F7F7 !important;
+}
+.item.instagram .entry-meta, .item.instagram .entry-header {
+	background-color: #ffffff;
+}
+.item.youtu, .item.youtube {
+	/*background-color: #000000 !important;*/
+}
+
+/* Plugins ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* social timeline --------------------------------------------------------------------- */
+
+div.modern div.dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineContentFoot {
+	background-color: #f6f7f7;
+}
+div.dpSocialTimelineLoading {
+	background-color: #71a0ae !important;
+}
+
+/* MEDIA PLAYER ---------------------------------------------------------------------------- */
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	background: #055db3;
+}
+.mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #FF61FB !important;
+}
+.mejs-mediaelement {
+	background: #ffffff;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: rgba(0, 0, 0, 0.33);
+}
+.mejs-container .mejs-controls .mejs-time {
+	color: #055db3;
+}
+
+/* FORUMS ----------------------------------------------------------------------------------- */
+
+.bbp-forum-title {
+	color: rgb(255, 255, 255);
+}
+.bbp-forums .type-forum li:nth-last-of-type(1), .bbp-forums .type-forum li:nth-last-of-type(2), .bbp-forums .type-forum li:nth-last-of-type(3) {
+	/*background-color: #607d8b !important;*/
+}
+.forum.bbpress #bbpress-forums li.bbp-header {
+	background: #cccccc;
+	color: white;
+}
+.topic.bbpress .entry-content .bbp-reply-position-1 {
+	background-color: #71A0AE !important;
+	color: white;
+}
+#bbp_reply_submit, #respond.showme .submit {
+	background: #6bd2ec;
+	color: #ffffff;
+}
+.bbp-topic-permalink, .bbp-topic-permalink:hover, .bbp-topic-permalink:visited, #bbpress-forums li.bbpress .bbp-forum-freshness a {
+	color: #555555 !important;
+}
+.bbpress .bbp-forum-freshness a, #bbpress-forums li.bbp-body li.bbp-forum-freshness {
+	color: #ffffff !important;
+}
+.bbp-forum-topic-count, .bbp-forum-reply-count {
+	color: #ffffff;
+}
+
+/* Directorys ------------------------------------------------------------------------------------- */
+
+.ac-container label:hover {
+	background: #fff;
+}
+.ac-container article {
+	background: rgba(255, 255, 255, 0.5);
+}
+.ac-container article p {
+	color: #777;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+.ac-container input:checked~article {
+	box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
+}
+.ac-container a.recommendations, .ac-container a.testimonials {
+	color: #fff;
+	/* make black */
+	/*-webkit-filter: invert(100%);*/
+}
+.subsection li span.recommendations, .subsection li span.testimonials {
+	border-color: rgba(255, 255, 255, 0);
+	/* make black */
+	/*-webkit-filter: invert(100%);*/
+}
+.ac-container input:checked+label h2, .ac-container input:checked+label:hover h2 {
+    background: #ececec !important;
+    color: #455a64 !important;
+}
+ .ac-container article .meta-holder {
+    background: #4d4d4d !important;
+ }
+.ac-container a.recommendations:hover, .ac-container a.testimonials:hover {
+    background-color: #000 !important;
+}
+.ac-container .header h2 {
+	color: #000 !important;
+	background-color: #ececec !important;
+}
+.subsection li h2 {
+	color: #006899;
+}
+.ac-container .meta-holder a.recommendations, .ac-container .meta-holder a.testimonials, .ac-container .meta-holder a.contact, .ac-container .meta-holder a.telephone, .ac-container .meta-holder a.website, .ac-container .meta-holder a.location {
+	background: none;
+}
+
+/* IMAGES ------------------------------------------------------------------------------------------------------- */
+
+#cat_filters a[data-filter=".instagram"] {
+	background-image: url(../_media/social/instagram.png) !important;
+	background-color: #bbaa7c !important;
+}
+#cat_filters a[data-filter=".youtu"] {
+	background-image: url(../_media/social/youtube.png) !important;
+	background-color: #c4302a !important;
+}
+#cat_filters a[data-filter=".twitter"] {
+	background-image: url(../_media/social/twitter.png) !important;
+	background-color: #02b0e8 !important;
+}
+#cat_filters a[data-filter=".facebook"] {
+	background-image: url(../_media/social/facebook.png) !important;
+	background-color: #3b5998 !important;
+}
+#cat_filters a[data-filter=".soundcloud"] {
+	background-image: url(../_media/social/soundcloud.png) !important;
+	background-color: #ff7802 !important;
+}
+#cat_filters a[data-filter=".spotify"] {
+	background-image: url(../_media/social/spotify.png) !important;
+	background-color: #a6ce00 !important;
+}
+#cat_filters a[data-filter=".ebay"] {
+	background-image: url(../_media/social/ebay.png) !important;
+	background-color: #ffffff !important;
+}
+
+/* meta - can be overridden -------------------------------*/
+
+.meta-likes {
+	background-image: url(../_media/svgs/icon-meta-like-1.svg);
+}
+.meta-saves {
+	background-image: url(../_media/svgs/icon-meta-save-1.svg);
+}
+.meta-date {
+	background-image: url(../_media/svgs/icon-meta-date-1.svg);
+}
+.meta-price {
+	background-image: url(../_media/svgs/icon-meta-cost-1.svg);
+}
+.meta-views {
+	background-image: url(../_media/svgs/icon-meta-views-1.svg);
+}
+.meta-comments {
+	background-image: url(../_media/svgs/icon-meta-comments-1.svg);
+}
+.meta-holder .contact.button:before {
+	background-image: url(../_media/svgs/icon-meta-email-1.svg);
+}
+.meta-holder .website.button:before {
+	background-image: url(../_media/svgs/icon-meta-website-1.svg);
+}
+.meta-holder .location.button:before {
+	background-image: url(../_media/svgs/icon-meta-location-1.svg);
+}
+.meta-holder .telephone.button:before {
+	background-image: url(../_media/svgs/icon-meta-telephone-1.svg);
+}
+.ac-container a.recommendations, .subsection li span.recommendations {
+	background-image: url(../_media/svgs/icon-meta-like-1.svg);
+}
+.ac-container a.testimonials, .subsection li span.testimonials {
+	background-image: url(../_media/svgs/icon-meta-comments-1.svg);
+}
+h2.comments-title {
+	color: #999999;
+	display: none;
+}
+video {
+	background-color: #000000;
+}
+
+
+
+
+/* chatroom ------------------------------------------------------------------------------------------------------------ */
+
+.wpmudev-chat-module-messages-list {
+	background-color: #ffffff !important;
+}
+.wpmudev-chat-row {
+	/*background-color: #ffffff!important;*/
+}
+#wpmudev-chat-box-post-5253 div.wpmudev-chat-module-messages-list {
+	background: #f1f1f1;
+	background-color: #f1f1f1;
+}
+.wpmudev-chat-message {
+	color: #929292 !important;
+	background: none;
+	border-color: #b3e4ef transparent;
+}
+.wpcf7-submit {
+	background-color: #1bbae1 !important;
+	background: #1e8cbe !important;
+	color: #fff !important;
+}
+.gform_button, .comment-form-comment label, .wpmudev-chat-send-button {
+	background: #6ad2ef;
+	color: #ffffff;
+}
+

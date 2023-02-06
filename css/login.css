@@ -1,0 +1,165 @@
+body {
+    background: #293237 !important;
+}
+
+.wp-core-ui .button.button-large{float:left;height: 50px !important;}
+ 
+.login label{color:#FFF;width:100%;line-height:0px; font-size: 0px;}
+
+#login,.login form{margin-left:auto;margin-right:auto;padding:0;border:0 solid rgba(0,0,0,.2);background-clip:padding-box;background:inherit;box-shadow:none;}.login iframe{width:inherit!important}
+
+#loginform p {
+    line-height: 0;
+    height: 59px;
+}
+
+.wp-core-ui .button, .wp-core-ui .button-secondary,
+.wp-core-ui .button:hover, .wp-core-ui .button-secondary:hover,
+.js.login input.password-input,
+input[type="text"] {
+    color: #eab300;
+}
+
+.wp-hide-pw > .dashicons {
+    font-size: 30px;
+}
+
+.login .button.wp-hide-pw .dashicons{right: 10px}
+
+
+
+.fb-ackit-desc,
+.fb-ackit-or{display: none !important;}
+
+.login h1 a { background-image: url('data:image/svg+xml;utf8,<svg id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20300.01%20300%22%3E%3Ctitle%3Ecommunio-icon1%3C/title%3E%3Cpath%20d%3D%22M181.08%2C3.2A150%2C150%2C0%2C0%2C1%2C296.71%2C181.06a9.39%2C9.39%2C0%2C0%2C1-12.06%2C4.79%2C8.87%2C8.87%2C0%2C0%2C1-5.7-7.56%2C114.9%2C114.9%2C0%2C0%2C0-41.64-95.55%2C38.28%2C38.28%2C0%2C0%2C0-54.77-35.07A101.42%2C101.42%2C0%2C0%2C0%2C78.83%2C89.08a9.14%2C9.14%2C0%2C0%2C1-15.39-9.69h0a126.08%2C126.08%2C0%2C0%2C1%2C49.9-49A16.31%2C16.31%2C0%2C0%2C0%2C114.93%2C4.2%2C150.39%2C150.39%2C0%2C0%2C1%2C181.08%2C3.2Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M174.29%2C62.57c10-13%2C29.16-15.89%2C42.82-6.36.55.38%2C1.08.78%2C1.6%2C1.2a31.63%2C31.63%2C0%2C0%2C1%2C5.11%2C44.44c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.65%2C31.65%2C0%2C0%2C1%2C174.29%2C62.57Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M181.08%2C3.2A150%2C150%2C0%2C0%2C1%2C296.71%2C181.06a9.39%2C9.39%2C0%2C0%2C1-12.06%2C4.79%2C8.87%2C8.87%2C0%2C0%2C1-5.7-7.56%2C114.9%2C114.9%2C0%2C0%2C0-41.64-95.55%2C38.28%2C38.28%2C0%2C0%2C0-54.77-35.07A101.42%2C101.42%2C0%2C0%2C0%2C78.83%2C89.08a9.14%2C9.14%2C0%2C0%2C1-15.39-9.69h0a126.08%2C126.08%2C0%2C0%2C1%2C49.9-49A16.31%2C16.31%2C0%2C0%2C0%2C114.93%2C4.2%2C150.39%2C150.39%2C0%2C0%2C1%2C181.08%2C3.2Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M174.29%2C62.57c10-13%2C29.16-15.89%2C42.82-6.36.55.38%2C1.08.78%2C1.6%2C1.2a31.63%2C31.63%2C0%2C0%2C1%2C5.11%2C44.44c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.65%2C31.65%2C0%2C0%2C1%2C174.29%2C62.57Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M181.08%2C3.2A150%2C150%2C0%2C0%2C1%2C296.71%2C181.06a9.39%2C9.39%2C0%2C0%2C1-12.06%2C4.79%2C8.87%2C8.87%2C0%2C0%2C1-5.7-7.56%2C114.9%2C114.9%2C0%2C0%2C0-41.64-95.55%2C38.28%2C38.28%2C0%2C0%2C0-54.77-35.07A101.42%2C101.42%2C0%2C0%2C0%2C78.83%2C89.08a9.14%2C9.14%2C0%2C0%2C1-15.39-9.69h0a126.08%2C126.08%2C0%2C0%2C1%2C49.9-49A16.31%2C16.31%2C0%2C0%2C0%2C114.93%2C4.2%2C150.39%2C150.39%2C0%2C0%2C1%2C181.08%2C3.2Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M174.29%2C62.57c10-13%2C29.16-15.89%2C42.82-6.36.55.38%2C1.08.78%2C1.6%2C1.2a31.63%2C31.63%2C0%2C0%2C1%2C5.11%2C44.44c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.65%2C31.65%2C0%2C0%2C1%2C174.29%2C62.57Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M181.08%2C3.2A150%2C150%2C0%2C0%2C1%2C296.71%2C181.06a9.39%2C9.39%2C0%2C0%2C1-12.06%2C4.79%2C8.87%2C8.87%2C0%2C0%2C1-5.7-7.56%2C114.9%2C114.9%2C0%2C0%2C0-41.64-95.55%2C38.28%2C38.28%2C0%2C0%2C0-54.77-35.07A101.42%2C101.42%2C0%2C0%2C0%2C78.83%2C89.08a9.14%2C9.14%2C0%2C0%2C1-15.39-9.69h0a126.08%2C126.08%2C0%2C0%2C1%2C49.9-49A16.31%2C16.31%2C0%2C0%2C0%2C114.93%2C4.2%2C150.39%2C150.39%2C0%2C0%2C1%2C181.08%2C3.2Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M174.29%2C62.57c10-13%2C29.16-15.89%2C42.82-6.36.55.38%2C1.08.78%2C1.6%2C1.2a31.63%2C31.63%2C0%2C0%2C1%2C5.11%2C44.44c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.65%2C31.65%2C0%2C0%2C1%2C174.29%2C62.57Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M181.08%2C3.2A150%2C150%2C0%2C0%2C1%2C296.71%2C181.06a9.39%2C9.39%2C0%2C0%2C1-12.06%2C4.79%2C8.87%2C8.87%2C0%2C0%2C1-5.7-7.56%2C114.9%2C114.9%2C0%2C0%2C0-41.64-95.55%2C38.28%2C38.28%2C0%2C0%2C0-54.77-35.07A101.42%2C101.42%2C0%2C0%2C0%2C78.83%2C89.08a9.14%2C9.14%2C0%2C0%2C1-15.39-9.69h0a126.08%2C126.08%2C0%2C0%2C1%2C49.9-49A16.31%2C16.31%2C0%2C0%2C0%2C114.93%2C4.2%2C150.39%2C150.39%2C0%2C0%2C1%2C181.08%2C3.2Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M174.29%2C62.57c10-13%2C29.16-15.89%2C42.82-6.36.55.38%2C1.08.78%2C1.6%2C1.2a31.63%2C31.63%2C0%2C0%2C1%2C5.11%2C44.44c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.65%2C31.65%2C0%2C0%2C1%2C174.29%2C62.57Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M181.08%2C3.2A150%2C150%2C0%2C0%2C1%2C296.71%2C181.06a9.39%2C9.39%2C0%2C0%2C1-12.06%2C4.79%2C8.87%2C8.87%2C0%2C0%2C1-5.7-7.56%2C114.9%2C114.9%2C0%2C0%2C0-41.64-95.55%2C38.28%2C38.28%2C0%2C0%2C0-54.77-35.07A101.42%2C101.42%2C0%2C0%2C0%2C78.83%2C89.08a9.14%2C9.14%2C0%2C0%2C1-15.39-9.69h0a126.08%2C126.08%2C0%2C0%2C1%2C49.9-49A16.31%2C16.31%2C0%2C0%2C0%2C114.93%2C4.2%2C150.39%2C150.39%2C0%2C0%2C1%2C181.08%2C3.2Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M174.29%2C62.57c10-13%2C29.16-15.89%2C42.82-6.36.55.38%2C1.08.78%2C1.6%2C1.2a31.63%2C31.63%2C0%2C0%2C1%2C5.11%2C44.44c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.65%2C31.65%2C0%2C0%2C1%2C174.29%2C62.57Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23ff7d1f%22/%3E%3Cpath%20d%3D%22M103.57%2C7.36a9.33%2C9.33%2C0%2C0%2C1%2C6.48%2C16.76A114.85%2C114.85%2C0%2C0%2C0%2C48.16%2C108a38.31%2C38.31%2C0%2C0%2C0-3%2C64.94%2C101.49%2C101.49%2C0%2C0%2C0%2C87.72%2C69.15%2C9.15%2C9.15%2C0%2C0%2C1-.69%2C18.19A126%2C126%2C0%2C0%2C1%2C64.66%2C241.6%2C16.36%2C16.36%2C0%2C0%2C0%2C43.08%2C248l-.36.68a16.73%2C16.73%2C0%2C0%2C0-1.51%2C4.54A150%2C150%2C0%2C0%2C1%2C103.57%2C7.36Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23655150%22/%3E%3Cellipse%20cx%3D%22184.12%22%20cy%3D%22226.33%22%20rx%3D%2231.62%22%20ry%3D%2231.63%22%20style%3D%22fill%3A%231d9fd3%22/%3E%3Cpath%20d%3D%22M42.07%2C121.68c10-13%2C29.15-15.89%2C42.82-6.37.55.39%2C1.09.79%2C1.62%2C1.21A31.63%2C31.63%2C0%2C0%2C1%2C91.62%2C161c-10%2C13-29.16%2C15.89-42.82%2C6.36-.55-.38-1.08-.78-1.6-1.2A31.62%2C31.62%2C0%2C0%2C1%2C42.07%2C121.68Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%23655150%22/%3E%3Cpath%20d%3D%22M261.51%2C250.28A150%2C150%2C0%2C0%2C1%2C49.74%2C261.56a9.31%2C9.31%2C0%2C0%2C1%2C10.84-14.15l.41.16a114.81%2C114.81%2C0%2C0%2C0%2C103.53%2C11.69%2C38.27%2C38.27%2C0%2C0%2C0%2C57.74-29.86%2C101.54%2C101.54%2C0%2C0%2C0%2C16-110.57%2C9.16%2C9.16%2C0%2C0%2C1%2C16.1-8.55%2C126.15%2C126.15%2C0%2C0%2C1%2C17.58%2C67.82c.26%2C8.76%2C7.9%2C15.65%2C17.08%2C15.41h.08a16.22%2C16.22%2C0%2C0%2C0%2C4.69-.94A150%2C150%2C0%2C0%2C1%2C261.51%2C250.28Z%22%20transform%3D%22translate%280.01%200%29%22%20style%3D%22fill%3A%231d9fd3%22/></svg>');
+}
+
+p#nav a,
+.wp-core-ui .button.button-large{border: 0px;
+    border-radius: 0px;}
+	
+	
+.login #backtoblog{float:left!important}
+
+.login form .input,.login input[type=text]{border-radius:3px;font-size:16px;background:#242424!important;height:50px;font-weight:400; text-align: center;}
+
+.login #backtoblog,.login #nav,.login .button-primary{width:100%;height:50px!important; border-top:0;float:right;background-color:#71C3EE!important;background:-webkit-gradient(linear,left top,left bottom,from(#71C3EE),to(#17418B));background:-webkit-linear-gradient(top,#71C3EE,#17418B);background:-moz-linear-gradient(top,#71C3EE,#17418B);background:-ms-linear-gradient(top,#71C3EE,#17418B);background:-o-linear-gradient(top,#71C3EE,#17418B);background-image:-ms-linear-gradient(top,#71C3EE 0,#17418B 100%);text-shadow:#333 0 -1px 0;color:#000}
+
+.fb-ackit-wrap .fb-ackit-login-forms {
+     margin-bottom: 0px  !important;
+    padding-bottom: 0px !important;
+}
+
+.submit .button.button-large{
+	margin-bottom: 9px !important;
+}
+
+.fb-ackit-wrap{margin-top: 0px !important;}
+
+.login .button-primary:hover{background-image:none}.wp-core-ui .button-primary:focus{-webkit-box-shadow:none;box-shadow:none}
+
+.fb-ackit-wrap .fb-ackit-login-forms .dashicons {
+    margin-top: 13px !important;
+}
+
+.login form {
+    padding-bottom: 3px !important;
+}
+
+.fb-ackit-wrap .fb-ackit-login-forms a {
+    display: block;
+    height: 60px;
+    line-height: 47px;
+    margin-bottom: 16px;
+}
+
+.wp-signup-container .submit,
+.login .button-primary,p#nav a,
+.fb-ackit-toggle a,
+.fb-ackit-login-forms a{
+	background: #eab300 !important;
+    text-shadow: none!important;
+    margin: 0;
+    /* padding: 0; */
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    display: block;
+    text-transform: uppercase!important;
+    font-weight: 700!important;
+    color: #fff!important;}
+
+.forgetmenot,.login #login_error,.login .message{display:none!important}
+
+.privacy-policy-page-link{display: none !important;}
+
+#login{width:330px}
+.login form{
+	margin-top: 0;
+    border-bottom: 0px solid #00000042;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.login .wp-core-ui .button.button-large{margin-top:7px}.login #backtoblog,.login #nav{    line-height: 9px !important; padding:0px !important;line-height:normal;font-size:14px;vertical-align:middle;height:auto;margin-bottom:4px;border-color:#0074a2;box-shadow:inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);cursor:pointer;border-width:1px;border-style:solid;border-radius:3px;white-space:nowrap;text-shadow:#333 0 1px 0;/*display:none*/}.login p, .login label{text-shadow:none;color:#333}.login #nav{        border: 0px;
+    padding-left: 20px;
+    float: left;
+    margin-left: 0px; margin-top: 5px; display: none;}
+
+.login #nav a{color:#fff}.new-message{margin-left:10px;margin-right:10px;text-align:center}.login h1{margin:0px}#loginform p{/*display:none*/}
+
+
+
+
+.mobile #login form{margin-left:11px}
+.wp-social-login-connect-with{display: none!important;}.wp-social-login-provider-list{text-align: center;}#backtoblog{display: none !important;}
+
+.wp-social-login-provider-list {
+    padding: 0px;
+}
+
+.wp-social-login-provider-list img{display:none}
+.wp-social-login-provider-list a{width: 60px;
+    height: 60px;
+    display: inline-block;
+background-size: contain;
+	margin-right: 4px;
+	margin-bottom: 4px;
+}
+.wp-social-login-provider-list a:last-of-type{
+	margin-right: -1px;
+}
+.wp-social-login-provider-facebook{background-image:url(../_media/social/facebook.png); }
+.wp-social-login-provider-google{background-image:url(../_media/social/googleplus.png); }
+.wp-social-login-provider-instagram{background-image:url(../_media/social/instagram.png); }
+.wp-social-login-provider-twitter{background-image:url(../_media/social/twitter.png); }
+.wp-social-login-provider-linkedin{background-image:url(../_media/social/linkedin.png); }
+
+#nav a {
+  
+    margin: auto;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+.login form .input, .login input[type=text] {
+    padding: 0;
+    margin: 0;
+}
+
+.user-pass-wrap {
+    padding-bottom: 25px;
+}
